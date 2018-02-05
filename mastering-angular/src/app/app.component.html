@@ -1,0 +1,32 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+
+<a routerLink = 'about'>About</a><br/>
+<a routerLink = 'dashboard'>Dashboard</a><br/>
+<a routerLink = 'testtypescriptcomponent'>TestTypescriptComponent</a><br/>
+<app-about [person] = 'persontoBePassed' (onYell) = 'yell($event)'></app-about><br/>
+<hr/>
+<!-- <app-alias-input [some-alias] = "isFavorite" [change] = "onFavoriteChange($event)"></app-alias-input> ALIAS on Input -->
+<app-alias-input [some-alias] = "isFavorite"></app-alias-input> <!--ALIAS on Input -->
+<app-http-services></app-http-services>
+
+<hr/>
+<h1><u>Template Driving Forms</u></h1>
+<app-template-driven-forms></app-template-driven-forms>
+
+<hr/>
+<h1><u>Reactive Forms</u></h1>
+<app-reactive-forms></app-reactive-forms>
+
+
+<hr/>
+<h1>Redux Example</h1>
+
+<app-redux-test></app-redux-test>
+
+<router-outlet></router-outlet>
+

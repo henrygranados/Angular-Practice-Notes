@@ -1,0 +1,11 @@
+<p>
+  test-typescript works!
+</p>
+<button class = "btn btn-primary" [class.active] = 'isActive'>Click me</button> <!-- class binding --- a class will get injected based on condition-->
+<button [style.background]= "isActive ? 'yellow' : 'green'">Save</button><!--style binding - using DOM style object properties-->
+<hr/>
+<p>Event Binding</p>
+<event-binding></event-binding>
+<hr/>
+<p>Event Filtering</p>
+<event-filtering></event-filtering>

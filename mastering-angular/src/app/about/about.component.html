@@ -1,0 +1,18 @@
+<p>
+  about works!
+</p>
+
+<button (click)="myFunction($event)">Click me</button><br/>
+<hr/>
+<p>Two way Data Binding</p>
+<input type="text" [(ngModel)] = "name"/>
+My name is: {{name}}
+<hr/>
+
+<p>Using <b>@Input</b> when passing from Partent to Child component</p>
+<p> {{person.age}}</p>
+<hr/>
+
+<p>Using <b>@Output</b> when passing from Child to Parent component</p>
+<button (click) = 'fireOnYellEvent($event)'>Hit me</button>
+<hr/>
